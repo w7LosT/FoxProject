@@ -1,0 +1,81 @@
+ul#menu li.nav-item{
+    display: inline-block;
+    text-align: right;
+}
+
+ul#menu li.nav-item a{
+    position: relative; 
+    float: right;
+    text-decoration: none;
+    color: white; 
+    margin-left: 7px; 
+    margin-right: 7px; 
+    padding-top: 1px; 
+    padding-right: 1px; 
+}
+
+ul#menu li.nav-item a:after{ /*after serve para criar um conteúdo após o que está definido no arquivo html, o sublinhado que aparecer, na verdade, é o background do after */
+     content: ""; 
+     display: inline-block; 
+     position: absolute; 
+     left: 7px; /* Faz com que o sublinhado fique alinhado com o link*/
+     bottom: -6px; /* Faz com que o sublinhado fique abaixo do link*/
+     background-color: yellow; 
+     width: 0px; /* Define se a linha pode ser vista ou não, altere o valor para entender*/ /* Sem esse width e o height, o sublinhado não funciona*/
+     height: 3px; /* É a espessura da linha*/
+     transition: all 0.4s
+}
+
+ul#menu li.nav-item a:hover{
+    color: yellow;
+}
+
+ul#menu li.nav-item a:hover:after{
+    width: 100%;
+}
+
+ul#side-menu li a{
+ 
+}
+
+#tabela{
+    float: left;
+    background-color: darkgray;
+    padding-bottom: 4px;
+    padding-top: 0.4px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 8px;
+    margin-bottom: auto;
+    margin-left: 0px;
+    box-shadow: 2px 2px 2px #666666;
+    width: 700px;
+}
+
+#rodape{
+    clear: both;
+    text-align: center;
+    background-color: rgba(0,0,0,.8); 
+    color: white;
+    margin-bottom: auto;
+}
+
+#rodape span{
+    color: white;
+}
+#piechart_3d{
+    float: right;
+    box-shadow: 2px 2px 2px 2px darkgray;
+    margin: -909px -90px 30px 500px;
+}
+
+#outer {
+  width: 50%;
+  margin-top: 165px;
+  margin-left: 300px;
+}
+
+#inner {
+  width: 460px; 
+  
+}
